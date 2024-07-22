@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+html, body {
+    width: 100;
+    margin: 0;
+}
+
+body {
+    /* background-image: url("./images/bg-pattern-top-desktop.svg"); */
+    font-family: "League Spartan", sans-serif;
+}
+
+.container {
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.smallContainer {
+    width: 90%;
+}
+
+.card-1 {
+    display: flex;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 0; 
+}
+
+.card-1 > p {
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.info {
+    padding: 2rem 2rem;
+    flex: 1;
+}
+
+.reviews {
+    flex: 1;
+    padding: 2rem 0rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;   
+}
+
+.row1{
+    padding: 0.8rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 7px;
+    width: 75%;
+    display: flex;
+    gap: 30px;
+    margin: 1rem 0rem;
+    margin-top: 3rem;
+}
+
+.row2 {
+    padding: 0.8rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 7px;
+    width: 75%;
+    display: flex;
+    gap: 30px;
+    margin: 1rem 0rem;
+    margin-left: 3rem;
+}
+
+.row3 {
+    padding: 0.8rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 7px;
+    width: 75%;
+    display: flex;
+    gap: 30px;
+    margin: 1rem 0rem;
+    margin-left: 6rem;
+}
+
+.card-2 {
+    display: flex;
+}
+
+.review-card {
+    flex: 1;
+    padding: 1.8rem 1.8rem;
+    background-color: hsl(300, 43%, 22%);
+    width: 68%;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;  
+    margin: 0rem 0.8rem;
+    height: 130px;
+}
+
+.review-card > p {
+    line-height: 18px;
+    margin-bottom: 0;
+    opacity: 0.85;
+}
+
+.user-info {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.h1-div {
+    width: 60%;
+}
+
+.p-div {
+    width: 78%; 
+    line-height: 22px; 
+    font-weight: 400;
+}
+
+.review-card2 {
+    flex: 1;
+    padding: 1.8rem 1.8rem;
+    background-color: hsl(300, 43%, 22%);
+    width: 68%;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 1rem 0.8rem;
+    height: 130px;
+}
+
+.review-card2 > p {
+    line-height: 18px;
+    margin-bottom: 0;
+    opacity: 0.85;
+}
+.review-card3 {
+    flex: 1;
+    padding: 1.8rem 1.8rem;
+    background-color: hsl(300, 43%, 22%);
+    width: 68%;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 2rem 0.8rem;
+    height: 130px;
+}
+
+.review-card3 > p {
+    line-height: 18px;
+    margin-bottom: 0;
+    opacity: 0.85;
+}
+
+@media screen and (max-width: 767px){
+    .container {
+        width: 80%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .smallContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .info {
+        padding-bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .h1-div {
+        width: 100%;
+    }
+
+    .p-div {
+        width: 100%;
+    }
+
+    .card-2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .reviews {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .row1, .row2, .row3 {
+        width: 100%;
+        margin: 1rem 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .review-card {
+        width: 95%;
+    }
+
+    .review-card2 {
+        width: 95%;
+    }
+
+    .review-card3 {
+        width: 95%;
+        margin-top: 0rem;
+    }
+}
